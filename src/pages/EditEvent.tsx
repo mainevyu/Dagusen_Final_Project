@@ -84,7 +84,7 @@ const EditEvent: React.FC = () => {
     if (!id) return;
     try {
       await updateEvent(id, formData);
-      alert("🌲 Event updated successfully!");
+      alert("Event updated successfully!");
       navigate(`/events/${id}`);
     } catch (error) { 
       alert("Could not update event."); 
